@@ -23,14 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbf33a32-75de-4cca-ad62-f3a7061f0472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/config/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/bac/server/security/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/security/AuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ba/bac/server/ui/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/ui/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/bac/server/io/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/io/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/bac/server/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/bac/server/service/implementation/EmailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/service/implementation/EmailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ba/bac/server/service/implementation/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/service/implementation/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ba/bac/server/io/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ba/bac/server/io/entity/UserEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ba/bac/server/service/implementation/EmailServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ba/bac/server/service/implementation/EmailServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ba/bac/server/service/implementation/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ba/bac/server/service/implementation/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ba/bac/server/ui/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ba/bac/server/ui/controller/UserController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,45 +71,35 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ba.bac.server.config" />
-      <recent name="ba.bac.server.ui.controller" />
-      <recent name="ba.bac.server.service.implementation" />
-      <recent name="ba.bac.server" />
-      <recent name="ba.bac.server.io.entity" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/ba/bac/server/ui" />
       <recent name="$PROJECT_DIR$/src/main/java/ba/bac/server" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="db.migration" />
+      <recent name="ba.bac.server.config" />
+      <recent name="ba.bac.server.ui.controller" />
+      <recent name="ba.bac.server.service.implementation" />
+      <recent name="ba.bac.server" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BacServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="bac_server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ba.bac.server.BacServerApplication" />
@@ -129,11 +120,120 @@
       <workItem from="1633083853507" duration="2371000" />
       <workItem from="1633096294105" duration="25077000" />
       <workItem from="1633202817825" duration="6652000" />
+      <workItem from="1634412079616" duration="7668000" />
+      <workItem from="1634658023032" duration="438000" />
+      <workItem from="1634760095268" duration="7196000" />
+      <workItem from="1635493650574" duration="1676000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.slf4j:jul-to-slf4j" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.xml.bind:jakarta.xml.bind-api" />
+    <option featureType="dependencySupport" implementationName="java:org.javassist:javassist" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-web" />
+    <option featureType="dependencySupport" implementationName="java:com.zaxxer:HikariCP" />
+    <option featureType="dependencySupport" implementationName="java:net.minidev:accessors-smart" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.aspectj:aspectjweaver" />
+    <option featureType="dependencySupport" implementationName="java:org.flywaydb:flyway-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-test" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml:classmate" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.tomcat.embed:tomcat-embed-core" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.datatype:jackson-datatype-jsr310" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+    <option featureType="dependencySupport" implementationName="java:javax.mail:mail" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.jaxb:jaxb-runtime" />
+    <option featureType="dependencySupport" implementationName="java:org.skyscreamer:jsonassert" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.tomcat.embed:tomcat-embed-websocket" />
+    <option featureType="dependencySupport" implementationName="java:ch.qos.logback:logback-classic" />
+    <option featureType="dependencySupport" implementationName="java:org.mockito:mockito-junit-jupiter" />
+    <option featureType="dependencySupport" implementationName="java:org.glassfish.jaxb:txw2" />
+    <option featureType="dependencySupport" implementationName="java:org.opentest4j:opentest4j" />
+    <option featureType="dependencySupport" implementationName="java:org.objenesis:objenesis" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-tx" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-jcl" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-web" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-logging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-aop" />
+    <option featureType="dependencySupport" implementationName="java:ch.qos.logback:logback-core" />
+    <option featureType="dependencySupport" implementationName="java:org.checkerframework:checker-qual" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-databind" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.logging.log4j:log4j-to-slf4j" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter" />
+    <option featureType="dependencySupport" implementationName="java:org.jboss.logging:jboss-logging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-devtools" />
+    <option featureType="dependencySupport" implementationName="java:org.ow2.asm:asm" />
+    <option featureType="dependencySupport" implementationName="java:org.slf4j:slf4j-api" />
+    <option featureType="dependencySupport" implementationName="java:org.yaml:snakeyaml" />
+    <option featureType="dependencySupport" implementationName="java:antlr:antlr" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-autoconfigure" />
+    <option featureType="dependencySupport" implementationName="java:org.postgresql:postgresql" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-test-autoconfigure" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-json" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-expression" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.datatype:jackson-datatype-jdk8" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.dataformat:jackson-dataformat-xml" />
+    <option featureType="dependencySupport" implementationName="java:org.codehaus.woodstox:stax2-api" />
+    <option featureType="dependencySupport" implementationName="java:org.assertj:assertj-core" />
+    <option featureType="dependencySupport" implementationName="java:com.vaadin.external.google:android-json" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.module:jackson-module-parameter-names" />
+    <option featureType="dependencySupport" implementationName="java:org.apiguardian:apiguardian-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-jdbc" />
+    <option featureType="dependencySupport" implementationName="java:org.mockito:mockito-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-jdbc" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.transaction:jakarta.transaction-api" />
+    <option featureType="dependencySupport" implementationName="java:net.bytebuddy:byte-buddy" />
+    <option featureType="dependencySupport" implementationName="java:org.xmlunit:xmlunit-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-security" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter-params" />
+    <option featureType="dependencySupport" implementationName="java:org.hamcrest:hamcrest" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.platform:junit-platform-engine" />
+    <option featureType="dependencySupport" implementationName="java:net.bytebuddy:byte-buddy-agent" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-data-jpa" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:javax.activation:activation" />
+    <option featureType="dependencySupport" implementationName="java:org.jboss:jandex" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-aspects" />
+    <option featureType="dependencySupport" implementationName="java:org.dom4j:dom4j" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-test" />
+    <option featureType="dependencySupport" implementationName="java:com.jayway.jsonpath:json-path" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-beans" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.common:hibernate-commons-annotations" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-config" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-jpa" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.activation:jakarta.activation-api" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.module:jackson-module-jaxb-annotations" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter-engine" />
+    <option featureType="dependencySupport" implementationName="java:io.jsonwebtoken:jjwt" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-crypto" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-tomcat" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-annotations" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-test" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.jackson.core:jackson-core" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.platform:junit-platform-commons" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.annotation:jakarta.annotation-api" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-orm" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-context-support" />
+    <option featureType="dependencySupport" implementationName="java:org.modelmapper:modelmapper" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-context" />
+    <option featureType="dependencySupport" implementationName="java:com.sun.istack:istack-commons-runtime" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-aop" />
+    <option featureType="dependencySupport" implementationName="java:com.fasterxml.woodstox:woodstox-core" />
+    <option featureType="dependencySupport" implementationName="java:org.junit.jupiter:junit-jupiter-api" />
+    <option featureType="dependencySupport" implementationName="java:net.minidev:json-smart" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot-starter-web" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.tomcat.embed:tomcat-embed-el" />
+    <option featureType="dependencySupport" implementationName="java:com.sun.activation:jakarta.activation" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.logging.log4j:log4j-api" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -146,116 +246,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="929" y="448" key="#Inspections" timestamp="1633095720139">
-      <screen x="0" y="25" width="2560" height="1340" />
-    </state>
-    <state x="929" y="448" key="#Inspections/0.25.2560.1340@0.25.2560.1340" timestamp="1633095720139" />
-    <state x="759" y="424" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1633095853537">
-      <screen x="0" y="25" width="2560" height="1340" />
-    </state>
-    <state x="759" y="424" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.2560.1340@0.25.2560.1340" timestamp="1633095853537" />
-    <state x="-719" y="-311" key="#com.intellij.ide.util.MemberChooser" timestamp="1633194655003">
-      <screen x="-2560" y="-1027" width="2560" height="1340" />
-    </state>
-    <state x="-719" y="-271" key="#com.intellij.ide.util.MemberChooser/0.25.1440.800/-2560.-1027.2560.1415@-2560.-1027.2560.1415" timestamp="1633192234987" />
-    <state x="-719" y="-311" key="#com.intellij.ide.util.MemberChooser/0.25.1440.875/-2560.-1027.2560.1340@-2560.-1027.2560.1340" timestamp="1633194655003" />
-    <state x="1841" y="786" key="#com.intellij.ide.util.MemberChooser/0.25.2560.1340@0.25.2560.1340" timestamp="1633126916436" />
-    <state x="1032" y="571" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1633095847930">
-      <screen x="0" y="25" width="2560" height="1340" />
-    </state>
-    <state x="1032" y="571" key="#com.intellij.ide.util.TreeClassChooserDialog/0.25.2560.1340@0.25.2560.1340" timestamp="1633095847930" />
-    <state x="-2298" y="-968" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1633159445101">
-      <screen x="-2560" y="-1027" width="2560" height="1340" />
-    </state>
-    <state x="-2298" y="-968" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.875/-2560.-1027.2560.1340@-2560.-1027.2560.1340" timestamp="1633159445101" />
-    <state x="-1555" y="-510" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1633192053808">
-      <screen x="-2560" y="-1027" width="2560" height="1415" />
-    </state>
-    <state x="-1555" y="-510" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.800/-2560.-1027.2560.1415@-2560.-1027.2560.1415" timestamp="1633192053808" />
-    <state x="-1555" y="-537" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.875/-2560.-1027.2560.1340@-2560.-1027.2560.1340" timestamp="1633176332680" />
-    <state x="1005" y="515" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.2560.1340@0.25.2560.1340" timestamp="1633125656931" />
-    <state width="1980" height="252" key="GridCell.Tab.0.bottom" timestamp="1633286893447">
-      <screen x="-2560" y="-1027" width="2560" height="1340" />
-    </state>
-    <state width="1980" height="252" key="GridCell.Tab.0.bottom/0.25.1440.800/-2560.-1027.2560.1415@-2560.-1027.2560.1415" timestamp="1633277584890" />
-    <state width="1980" height="252" key="GridCell.Tab.0.bottom/0.25.1440.875/-2560.-1027.2560.1340@-2560.-1027.2560.1340" timestamp="1633286893447" />
-    <state width="1799" height="361" key="GridCell.Tab.0.bottom/0.25.2560.1340@0.25.2560.1340" timestamp="1633129810906" />
-    <state width="1980" height="252" key="GridCell.Tab.0.center" timestamp="1633286893447">
-      <screen x="-2560" y="-1027" width="2560" height="1340" />
-    </state>
-    <state width="1980" height="252" key="GridCell.Tab.0.center/0.25.1440.800/-2560.-1027.2560.1415@-2560.-1027.2560.1415" timestamp="1633277584884" />
-    <state width="1980" height="252" key="GridCell.Tab.0.center/0.25.1440.875/-2560.-1027.2560.1340@-2560.-1027.2560.1340" timestamp="1633286893446" />
-    <state width="1799" height="361" key="GridCell.Tab.0.center/0.25.2560.1340@0.25.2560.1340" timestamp="1633129810895" />
-    <state width="1980" height="252" key="GridCell.Tab.0.left" timestamp="1633286893446">
-      <screen x="-2560" y="-1027" width="2560" height="1340" />
-    </state>
-    <state width="1980" height="252" key="GridCell.Tab.0.left/0.25.1440.800/-2560.-1027.2560.1415@-2560.-1027.2560.1415" timestamp="1633277584880" />
-    <state width="1980" height="252" key="GridCell.Tab.0.left/0.25.1440.875/-2560.-1027.2560.1340@-2560.-1027.2560.1340" timestamp="1633286893446" />
-    <state width="1799" height="361" key="GridCell.Tab.0.left/0.25.2560.1340@0.25.2560.1340" timestamp="1633129810893" />
-    <state width="1980" height="252" key="GridCell.Tab.0.right" timestamp="1633286893447">
-      <screen x="-2560" y="-1027" width="2560" height="1340" />
-    </state>
-    <state width="1980" height="252" key="GridCell.Tab.0.right/0.25.1440.800/-2560.-1027.2560.1415@-2560.-1027.2560.1415" timestamp="1633277584889" />
-    <state width="1980" height="252" key="GridCell.Tab.0.right/0.25.1440.875/-2560.-1027.2560.1340@-2560.-1027.2560.1340" timestamp="1633286893447" />
-    <state width="1799" height="361" key="GridCell.Tab.0.right/0.25.2560.1340@0.25.2560.1340" timestamp="1633129810901" />
-    <state width="1980" height="252" key="GridCell.Tab.1.bottom" timestamp="1633286893448">
-      <screen x="-2560" y="-1027" width="2560" height="1340" />
-    </state>
-    <state width="1980" height="252" key="GridCell.Tab.1.bottom/0.25.1440.800/-2560.-1027.2560.1415@-2560.-1027.2560.1415" timestamp="1633277584896" />
-    <state width="1980" height="252" key="GridCell.Tab.1.bottom/0.25.1440.875/-2560.-1027.2560.1340@-2560.-1027.2560.1340" timestamp="1633286893448" />
-    <state width="1799" height="361" key="GridCell.Tab.1.bottom/0.25.2560.1340@0.25.2560.1340" timestamp="1633129810908" />
-    <state width="1980" height="252" key="GridCell.Tab.1.center" timestamp="1633286893448">
-      <screen x="-2560" y="-1027" width="2560" height="1340" />
-    </state>
-    <state width="1980" height="252" key="GridCell.Tab.1.center/0.25.1440.800/-2560.-1027.2560.1415@-2560.-1027.2560.1415" timestamp="1633277584893" />
-    <state width="1980" height="252" key="GridCell.Tab.1.center/0.25.1440.875/-2560.-1027.2560.1340@-2560.-1027.2560.1340" timestamp="1633286893448" />
-    <state width="1799" height="361" key="GridCell.Tab.1.center/0.25.2560.1340@0.25.2560.1340" timestamp="1633129810908" />
-    <state width="1980" height="252" key="GridCell.Tab.1.left" timestamp="1633286893448">
-      <screen x="-2560" y="-1027" width="2560" height="1340" />
-    </state>
-    <state width="1980" height="252" key="GridCell.Tab.1.left/0.25.1440.800/-2560.-1027.2560.1415@-2560.-1027.2560.1415" timestamp="1633277584892" />
-    <state width="1980" height="252" key="GridCell.Tab.1.left/0.25.1440.875/-2560.-1027.2560.1340@-2560.-1027.2560.1340" timestamp="1633286893448" />
-    <state width="1799" height="361" key="GridCell.Tab.1.left/0.25.2560.1340@0.25.2560.1340" timestamp="1633129810907" />
-    <state width="1980" height="252" key="GridCell.Tab.1.right" timestamp="1633286893448">
-      <screen x="-2560" y="-1027" width="2560" height="1340" />
-    </state>
-    <state width="1980" height="252" key="GridCell.Tab.1.right/0.25.1440.800/-2560.-1027.2560.1415@-2560.-1027.2560.1415" timestamp="1633277584895" />
-    <state width="1980" height="252" key="GridCell.Tab.1.right/0.25.1440.875/-2560.-1027.2560.1340@-2560.-1027.2560.1340" timestamp="1633286893448" />
-    <state width="1799" height="361" key="GridCell.Tab.1.right/0.25.2560.1340@0.25.2560.1340" timestamp="1633129810908" />
-    <state width="1980" height="408" key="GridCell.Tab.2.bottom" timestamp="1633196271286">
-      <screen x="-2560" y="-1027" width="2560" height="1340" />
-    </state>
-    <state width="1799" height="411" key="GridCell.Tab.2.bottom/0.25.1440.800/-2560.-1027.2560.1415@-2560.-1027.2560.1415" timestamp="1633193427895" />
-    <state width="1980" height="408" key="GridCell.Tab.2.bottom/0.25.1440.875/-2560.-1027.2560.1340@-2560.-1027.2560.1340" timestamp="1633196271286" />
-    <state width="1799" height="411" key="GridCell.Tab.2.bottom/0.25.2560.1340@0.25.2560.1340" timestamp="1633129803573" />
-    <state width="1980" height="408" key="GridCell.Tab.2.center" timestamp="1633196271279">
-      <screen x="-2560" y="-1027" width="2560" height="1340" />
-    </state>
-    <state width="1799" height="411" key="GridCell.Tab.2.center/0.25.1440.800/-2560.-1027.2560.1415@-2560.-1027.2560.1415" timestamp="1633193427893" />
-    <state width="1980" height="408" key="GridCell.Tab.2.center/0.25.1440.875/-2560.-1027.2560.1340@-2560.-1027.2560.1340" timestamp="1633196271279" />
-    <state width="1799" height="411" key="GridCell.Tab.2.center/0.25.2560.1340@0.25.2560.1340" timestamp="1633129803572" />
-    <state width="1980" height="408" key="GridCell.Tab.2.left" timestamp="1633196271249">
-      <screen x="-2560" y="-1027" width="2560" height="1340" />
-    </state>
-    <state width="1799" height="411" key="GridCell.Tab.2.left/0.25.1440.800/-2560.-1027.2560.1415@-2560.-1027.2560.1415" timestamp="1633193427882" />
-    <state width="1980" height="408" key="GridCell.Tab.2.left/0.25.1440.875/-2560.-1027.2560.1340@-2560.-1027.2560.1340" timestamp="1633196271249" />
-    <state width="1799" height="411" key="GridCell.Tab.2.left/0.25.2560.1340@0.25.2560.1340" timestamp="1633129803572" />
-    <state width="1980" height="408" key="GridCell.Tab.2.right" timestamp="1633196271283">
-      <screen x="-2560" y="-1027" width="2560" height="1340" />
-    </state>
-    <state width="1799" height="411" key="GridCell.Tab.2.right/0.25.1440.800/-2560.-1027.2560.1415@-2560.-1027.2560.1415" timestamp="1633193427894" />
-    <state width="1980" height="408" key="GridCell.Tab.2.right/0.25.1440.875/-2560.-1027.2560.1340@-2560.-1027.2560.1340" timestamp="1633196271283" />
-    <state width="1799" height="411" key="GridCell.Tab.2.right/0.25.2560.1340@0.25.2560.1340" timestamp="1633129803573" />
-    <state x="895" y="724" width="597" height="490" key="find.popup" timestamp="1633097775873">
-      <screen x="0" y="25" width="2560" height="1340" />
-    </state>
-    <state x="895" y="724" width="597" height="490" key="find.popup/0.25.2560.1340@0.25.2560.1340" timestamp="1633097775873" />
-    <state x="-1604" y="-633" width="670" height="641" key="search.everywhere.popup" timestamp="1633269695078">
-      <screen x="-2560" y="-1027" width="2560" height="1340" />
-    </state>
-    <state x="-1604" y="-611" width="670" height="676" key="search.everywhere.popup/0.25.1440.800/-2560.-1027.2560.1415@-2560.-1027.2560.1415" timestamp="1633192004137" />
-    <state x="-1604" y="-633" width="670" height="641" key="search.everywhere.popup/0.25.1440.875/-2560.-1027.2560.1340@-2560.-1027.2560.1340" timestamp="1633269695078" />
   </component>
 </project>

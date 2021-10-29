@@ -1,7 +1,6 @@
 package ba.bac.server.service.implementation;
 
 import ba.bac.server.service.EmailService;
-import ba.bac.server.shared.dto.UserDto;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.Resource;
@@ -32,6 +31,9 @@ public class EmailServiceImpl implements EmailService {
     @Value("${email.verification.url}")
     private String VERIFICATION_URL;
 
+    @Value("${email.password.reset.url}")
+    private String PASSWORD_RESET_URL;
+
     @Value("${email.host}")
     private String EMAIL_HOST;
 
@@ -47,8 +49,8 @@ public class EmailServiceImpl implements EmailService {
     @Value("${email.ba.password}")
     private String BA_EMAIL_PASSWORD;
 
-    public JavaMailSender javaMailSender()
-    {
+    @Override
+    public JavaMailSender javaMailSender() {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
         mailSender.setHost(EMAIL_HOST);
         mailSender.setPort(EMAIL_PORT);
@@ -67,8 +69,8 @@ public class EmailServiceImpl implements EmailService {
         return mailSender;
     }
 
+    @Override
     public void sendMail(String to, String subject, String body) {
-
         new Thread(() -> {
             try {
                 JavaMailSender mailSender = javaMailSender();
@@ -83,6 +85,7 @@ public class EmailServiceImpl implements EmailService {
         }).start();
     }
 
+    @Override
     public void sendHTMLMail(String emailTo, String subject, String body) {
         new Thread(() -> {
             try {
@@ -108,25 +111,48 @@ public class EmailServiceImpl implements EmailService {
         }).start();
     }
 
-    public void verifyEmail(UserDto userDto) {
-
+    @Override
+    public void verifyEmail(String email, String token) {
         Integer year = Calendar.getInstance().get(Calendar.YEAR);
         String subject = "Email verification";
         ResourceLoader resourceLoader = new DefaultResourceLoader();
         Resource resource = resourceLoader.getResource("html/verify_email_email_ba.html");
-        String fullUrl = VERIFICATION_URL + userDto.getEmailVerificationToken();
+        String fullUrl = VERIFICATION_URL + token;
 
         // Read resource
         try (Reader reader = new InputStreamReader(resource.getInputStream(), UTF_8)) {
             String body = FileCopyUtils.copyToString(reader);
             body = body.replaceAll("urlLinkHere", fullUrl);
             body = body.replaceAll("yearHere", year.toString());
-            sendHTMLMail(userDto.getEmail(), subject, body);
+            sendHTMLMail(email, subject, body);
         } catch (IOException e) {
             throw new UncheckedIOException(e);
         }
 
-        System.out.println("Email sent!");
+        System.out.println("Verification email sent!");
+    }
 
+    @Override
+    public boolean requestPasswordReset(String email, String token) {
+        boolean returnValue = false;
+        Integer year = Calendar.getInstance().get(Calendar.YEAR);
+        String subject = "Password reset";
+        ResourceLoader resourceLoader = new DefaultResourceLoader();
+        Resource resource = resourceLoader.getResource("html/reset_password_email_ba.html");
+        String fullUrl = PASSWORD_RESET_URL + token;
+
+        // Read resource
+        try (Reader reader = new InputStreamReader(resource.getInputStream(), UTF_8)) {
+            String body = FileCopyUtils.copyToString(reader);
+            body = body.replaceAll("urlLinkHere", fullUrl);
+            body = body.replaceAll("yearHere", year.toString());
+            sendHTMLMail(email, subject, body);
+            returnValue = true;
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
+        }
+
+        System.out.println("Recovery email sent!");
+        return returnValue;
     }
 }

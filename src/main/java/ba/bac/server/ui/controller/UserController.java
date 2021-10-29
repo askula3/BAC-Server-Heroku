@@ -74,7 +74,7 @@ public class UserController {
 
         boolean registerStepUpdated = userService.updateRegisterStep(id, step);
 
-        if(registerStepUpdated) {
+        if (registerStepUpdated) {
             returnValue.setOperationResult(RequestOperationStatus.SUCCESS.name());
         } else {
             returnValue.setOperationResult(RequestOperationStatus.ERROR.name());

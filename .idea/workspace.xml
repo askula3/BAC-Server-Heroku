@@ -23,16 +23,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbf33a32-75de-4cca-ad62-f3a7061f0472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/io/entity/MutualRelationshipsEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/io/repository/MutualRelationshipsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/service/MutualRelationshipsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/service/implementation/MutualRelationshipsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/shared/dto/MutualRelationshipsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/ui/controller/MutualRelationshipsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/ui/model/request/MutualRelationshipRequestModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/ui/model/response/MutualRelationshipsRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/io/entity/MediaMonitoringEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/io/repository/MediaMonitoringRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/service/MediaMonitoringService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/service/implementation/MediaMonitoringServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/shared/dto/MediaMonitoringDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/ui/model/request/MediaMonitoringRequestModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ba/bac/server/ui/model/response/MediaMonitoringRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ba/bac/server/io/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ba/bac/server/io/entity/UserEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ba/bac/server/service/implementation/NotableIndividualServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ba/bac/server/service/implementation/NotableIndividualServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,28 +88,29 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src/main/java/ba/bac/server/ui" />
       <recent name="$PROJECT_DIR$/src/main/java/ba/bac/server" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="ba.bac.server.ui.model.request" />
-      <recent name="db.migration" />
-      <recent name="ba.bac.server.config" />
-      <recent name="ba.bac.server.ui.controller" />
       <recent name="ba.bac.server.service.implementation" />
+      <recent name="ba.bac.server.service" />
+      <recent name="ba.bac.server.io.repository" />
+      <recent name="ba.bac.server.shared.dto" />
+      <recent name="ba.bac.server.ui.model.response" />
     </key>
   </component>
   <component name="RunManager">
@@ -135,6 +140,8 @@
       <workItem from="1635493650574" duration="2474000" />
       <workItem from="1635762460981" duration="617000" />
       <workItem from="1635880805641" duration="7403000" />
+      <workItem from="1636062232786" duration="3317000" />
+      <workItem from="1637760740405" duration="18827000" />
     </task>
     <servers />
   </component>
@@ -262,9 +269,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ba/bac/server/service/implementation/MutualRelationshipsServiceImpl.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/src/main/java/ba/bac/server/service/implementation/NotableIndividualServiceImpl.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

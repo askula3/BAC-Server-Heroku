@@ -36,8 +36,8 @@ public class MutualRelationshipsController {
         MutualRelationshipsDto mutualRelationshipsDto = new MutualRelationshipsDto();
         mutualRelationshipsDto = new ModelMapper().map(relationshipsDetails, MutualRelationshipsDto.class);
 
-        MutualRelationshipsDto updateMutualRelationships = mutualRelationshipsService.updateMutualRelationships(country, mutualRelationshipsDto);
-        returnValue = new ModelMapper().map(updateMutualRelationships, MutualRelationshipsRest.class);
+        MutualRelationshipsDto updatedMutualRelationships = mutualRelationshipsService.updateMutualRelationships(country, mutualRelationshipsDto);
+        returnValue = new ModelMapper().map(updatedMutualRelationships, MutualRelationshipsRest.class);
 
         return returnValue;
     }
